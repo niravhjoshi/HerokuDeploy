@@ -8,8 +8,7 @@ from .forms import EditProfileForm
 from .. import db,login_manager
 from cryptography.fernet import Fernet
 from app import create_app,db
-#from ..add import CallFaceDetectSave
-from app import add
+from ..add import CallFaceDetectSave
 
 @main.route('/')
 @main.route('/index')
