@@ -1,4 +1,4 @@
-﻿from datetime import datetime
+from datetime import datetime
 from flask import render_template, Response,abort,flash,redirect,url_for
 from . import main
 from ..models import SVSuserReg,SVSFaceTab,SVSIpCamReg
@@ -8,7 +8,8 @@ from .forms import EditProfileForm
 from .. import db,login_manager
 from cryptography.fernet import Fernet
 from app import create_app,db
-from ..add import CallFaceDetectSave
+#from ..add import CallFaceDetectSave
+from app import add
 
 @main.route('/')
 @main.route('/index')
