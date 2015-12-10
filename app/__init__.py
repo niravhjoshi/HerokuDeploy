@@ -29,15 +29,15 @@ def create_app(config_name):
     moment.init_app(app)
     db.init_app(app)
     login_manager.init_app(app)
-    from .main import main as main_blueprint
+    from main import main as main_blueprint
     app.register_blueprint(main_blueprint)
-    from .auth import auth as auth_blueprint
+    from auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint, url_prefix='/auth')
-    from .cam import cam as cam_blueprint
+    from cam import cam as cam_blueprint
     app.register_blueprint(cam_blueprint,url_prefix='/cam')
-    from .FD import FD as FD_blueprint
+    from FD import FD as FD_blueprint
     app.register_blueprint(FD_blueprint,url_prefix='/FD')
-    from .api_5 import api_5 as api_5blueprint
+    from api_5 import api_5 as api_5blueprint
     app.register_blueprint(api_5blueprint,url_prefix='/api_5')
     return app
 
