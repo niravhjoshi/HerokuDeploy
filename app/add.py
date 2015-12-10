@@ -3,7 +3,7 @@ from flask import  current_app
 from flask.ext.script import Command
 import os,io
 from models import SVSIpCamReg,SVSuserReg,SVSFaceTab,db
-from manage import app
+#from manage import app
 from PIL import Image
 import base64,argparse,requests
 import numpy as np
